@@ -8,12 +8,13 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+groq_api_key = st.secrets["GROQ_API_KEY"]
 
 #langsmithtracking
 
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-os.environ["LANGCHAIN_TRACING"] = "true"
-os.environ["LANGCHAIN_PROJECT"] = "Q&A Chatbot With GROQ"
+# os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+# os.environ["LANGCHAIN_TRACING"] = "true"
+# os.environ["LANGCHAIN_PROJECT"] = "Q&A Chatbot With GROQ"
 
 # Prompt Template 
 
